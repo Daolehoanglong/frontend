@@ -1,0 +1,40 @@
+@media (max-width: 2500px) {
+    .banner1 {
+      height: 700px;
+    }
+  
+    .text-dark {
+      margin-left: 200px;
+      font-size: 70px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .banner1 {
+      height: 350px;
+    }
+  
+    .text-dark {
+      font-size: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner1 {
+      height: 300px;
+    }
+  
+    .text-dark {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .banner1 {
+      height: 250px;
+    }
+  
+    .text-dark {
+      font-size: 30px;
+    }
+  }

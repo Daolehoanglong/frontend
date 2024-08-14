@@ -1,0 +1,29 @@
+.product-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .product-thumbnail.active {
+    border-color: #007bff;
+  }
+
+  .product-price {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .product-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  

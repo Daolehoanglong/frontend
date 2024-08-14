@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .payment-options {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .address-fields {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .address-fields .form-group {
+            flex: 1;
+            margin-right: 1rem;
+        }
+
+        .address-fields .form-group:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Cart Info</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" value="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" value="123-456-7890">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" value="john.doe@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" class="form-control" id="address" value="123 Main St, Anytown USA">
+                </div>
+
+                <div class="address-fields">
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <select class="form-control" id="city">
+                            <option>City 1</option>
+                            <option>City 2</option>
+                            <option>City 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="district">District:</label>
+                        <select class="form-control" id="district">
+                            <option>District 1</option>
+                            <option>District 2</option>
+                            <option>District 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ward">Ward:</label>
+                        <select class="form-control" id="ward">
+                            <option>Ward 1</option>
+                            <option>Ward 2</option>
+                            <option>Ward 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group payment-options">
+                    <div>
+                        <input type="radio" id="momo" name="payment" value="momo">
+                        <label for="momo">MoMo</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">Cash on Delivery</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">Credit Card</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Cart Items</h2>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="product-image.jpg" class="card-img" alt="Product Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Product Name</h5>
+                                <p class="card-text">Product description goes here.</p>
+                                <p class="card-text">
+                                    <small class="text-muted">Price: $9.99</small>
+                                </p>
+                                <div class="input-group mb-3">
+                                    <button className="btn-minus">
+                                        -
+                                    </button>
+                                    <div>
+                                        1
+                                    </div>
+                                    <button className="btn-plus">
+                                        +
+                                    </button>
+                                </div>
+                                <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-6 text-right">
+                        <h5>Total: <span id="total-price">$9.99</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

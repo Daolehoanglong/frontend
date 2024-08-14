@@ -1,0 +1,84 @@
+.banner {
+    height: 700px;
+    color: white;
+}
+
+.banner1 {
+    background-image: url('img/machangngay.webp');
+    /* Thay bằng đường dẫn đến ảnh banner của bạn */
+    background-size: cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-top: 100px;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+}
+
+/* Hiệu ứng hover cho menu */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Ẩn menu mặc định */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    /* Hiện menu khi hover */
+}
+
+.text {
+    color: black;
+    font-size: 90px;
+}
+
+.product-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    /* Kích thước của nhóm nút */
+}
+
+.product-item:hover .product-action {
+    opacity: 1;
+    /* Hiện lên khi hover */
+}
+
+.product-action a {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+
+.card-img-top {
+    height: 300px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23000000"><path d="M11.742 1.5L6.742 8l5 6.5-1.486 1L4 8l6.256-7.5L11.742 1.5z"/></svg>');
+    /* Thay màu mũi tên trái thành màu đen */
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23000000"><path d="M4.258 1.5l5 6.5-5 6.5 1.486 1L12 8 4.744.5 4.258 1.5z"/></svg>');
+    /* Thay màu mũi tên phải thành màu đen */
+}

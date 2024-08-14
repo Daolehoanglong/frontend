@@ -1,0 +1,31 @@
+
+.pagination {
+    margin: 0px 30px;
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 100%;
+}
+.pagination a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #316b7d;
+    color: #fff;
+    border-radius: 3px;
+}
+.box{
+    margin-bottom: 150px;
+    height: auto;
+}
+.pro_w{
+    width: 300px;
+}
+.img_pro{
+    height: 400px;
+    
+}
+a {
+    color: black;
+    text-decoration: none;
+}

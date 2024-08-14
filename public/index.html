@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Trang Chủ Bán Quần Áo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">HLSHOP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Trang Chủ</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            Sản Phẩm
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Áo Thun</a>
+                            <a class="dropdown-item" href="#">Quần Jeans</a>
+                            <a class="dropdown-item" href="#">Đầm Dự Tiệc</a>
+                            <a class="dropdown-item" href="#">Giày Dép</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Giới Thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tin Tức</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Liên Hệ</a></li>
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#">Đăng Nhập</a>
+                    <a class="nav-link" href="#">Đăng Ký</a>
+                    <a class="nav-link" href="#">Giỏ Hàng</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Banner -->
+    <div id="carouselBanner" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/banner1.png" class="d-block w-100 banner" alt="Banner 1">
+                <!-- Thay bằng đường dẫn đến ảnh banner của bạn -->
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner2.png" class="d-block w-100 banner" alt="Banner 2">
+                <!-- Thay bằng đường dẫn đến ảnh banner của bạn -->
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/banner3.png" class="d-block w-100 banner" alt="Banner 3">
+                <!-- Thay bằng đường dẫn đến ảnh banner của bạn -->
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Sản Phẩm Mới và Hot -->
+    <div class="container mt-5">
+        <h2 class="text-center">Sản Phẩm Nổi Bật</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/aodaitay1.webp" alt="Áo Dài Tay 1">
+                        <div class="product-action">
+                            <a class="btn btn-outline-dark" href="detail.html" aria-label="Xem chi tiết Áo Dài Tay 1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                    class="bi bi-bag" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="detail1.html">Áo Dài Tay 1</a>
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h5>200.000 VNĐ</h5>
+                            <h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                <div class="product-item bg-light mb-4">
+                    <div class="product-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/aodaitay2.webp" alt="Áo Dài Tay 2">
+                        <div class="product-action">
+                            <a class="btn btn-outline-dark" href="detail2.html" aria-label="Xem chi tiết Áo Dài Tay 2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                    class="bi bi-bag" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <a class="h6 text-decoration-none text-truncate" href="detail2.html">Áo Dài Tay 2</a>
+                        <div class="d-flex align-items-center justify-content-center mt-2">
+                            <h5>220.000 VNĐ</h5>
+                            <h6 class="text-muted ml-2"><del>270.000 VNĐ</del></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thêm nhiều sản phẩm tương tự -->
+        </div>
+    </div>
+
+    <div class="banner1">
+        <p class="text">MẶC HÀNG NGÀY</p>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center">SẢN PHẨM MẶC HÀNG NGÀY</h2>
+        <div id="productCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/aodaitay1.webp" alt="Áo Dài Tay 1">
+                                    <div class="product-action">
+                                        <a class="btn btn-outline-dark" href="detail1.html"
+                                            aria-label="Xem chi tiết Áo Dài Tay 1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"
+                                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"
+                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"
+                                                fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="detail1.html">Áo Dài Tay
+                                        1</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>200.000 VNĐ</h5>
+                                        <h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/aodaitay1.webp" alt="Áo Dài Tay 1">
+                                    <div class="product-action">
+                                        <a class="btn btn-outline-dark" href="detail1.html" aria-label="Xem chi tiết Áo Dài Tay 1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-bag" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="detail1.html">Áo Dài Tay 1</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>200.000 VNĐ</h5>
+                                        <h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/aodaitay1.webp" alt="Áo Dài Tay 1">
+                                    <div class="product-action">
+                                        <a class="btn btn-outline-dark" href="detail1.html" aria-label="Xem chi tiết Áo Dài Tay 1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-bag" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="detail1.html">Áo Dài Tay 1</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>200.000 VNĐ</h5>
+                                        <h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/aodaitay1.webp" alt="Áo Dài Tay 1">
+                                    <div class="product-action">
+                                        <a class="btn btn-outline-dark" href="detail1.html" aria-label="Xem chi tiết Áo Dài Tay 1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-bag" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="detail1.html">Áo Dài Tay 1</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>200.000 VNĐ</h5>
+                                        <h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/aodaitay1.webp" alt="Áo Dài Tay 1">
+                                    <div class="product-action">
+                                        <a class="btn btn-outline-dark" href="detail1.html" aria-label="Xem chi tiết Áo Dài Tay 1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-bag" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="detail1.html">Áo Dài Tay 1</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>200.000 VNĐ</h5>
+                                        <h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/aodaitay1.webp" alt="Áo Dài Tay 1">
+                                    <div class="product-action">
+                                        <a class="btn btn-outline-dark" href="detail1.html" aria-label="Xem chi tiết Áo Dài Tay 1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-bag" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="detail1.html">Áo Dài Tay 1</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>200.000 VNĐ</h5>
+                                        <h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/aodaitay1.webp" alt="Áo Dài Tay 1">
+                                    <div class="product-action">
+                                        <a class="btn btn-outline-dark" href="detail1.html" aria-label="Xem chi tiết Áo Dài Tay 1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-bag" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="detail1.html">Áo Dài Tay 1</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>200.000 VNĐ</h5>
+                                        <h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/aodaitay1.webp" alt="Áo Dài Tay 1">
+                                    <div class="product-action">
+                                        <a class="btn btn-outline-dark" href="detail1.html" aria-label="Xem chi tiết Áo Dài Tay 1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-search" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào yêu thích">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                            </svg>
+                                        </a>
+                                        <a class="btn btn-outline-dark" href="#" aria-label="Thêm vào giỏ hàng">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" fill="currentColor"
+                                                class="bi bi-bag" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="detail1.html">Áo Dài Tay 1</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        <h5>200.000 VNĐ</h5>
+                                        <h6 class="text-muted ml-2"><del>250.000 VNĐ</del></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev"
+                style="left: -150px;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next"
+                style="right: -150px;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Tin Tức và Khuyến Mãi -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-dark mb-4">TIN TỨC</h2>
+            <div class="row">
+                <!-- Cột 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="img/thoitrangmuahe.jpg" class="card-img-top"
+                                alt="Xu Hướng Thời Trang Mùa Hè 2024">
+                            <h5 class="card-title">Xu Hướng Thời Trang MÙA HÈ 2024</h5>
+                            <p class="card-text">Mùa hè 2024 đang đến gần và các nhà thiết kế đã giới thiệu nhiều xu
+                                hướng mới thú vị. Những tông màu tươi sáng,..</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cột 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="img/chonthoitrang.jpg" class="card-img-top" alt="Xu Hướng Thời Trang Mùa Hè 2024">
+                            <h5 class="card-title">Cách Chọn Quần Áo Phù Hợp Với Dáng Người</h5>
+                            <p class="card-text">Việc chọn lựa quần áo phù hợp với dáng người không chỉ giúp bạn tự tin
+                                hơn mà còn tôn vinh ...
+                            </p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cột 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <img src="img/nganhmaymac.gif" class="card-img-top" alt="Xu Hướng Thời Trang Mùa Hè 2024">
+                            <h5 class="card-title">Thời Trang Bền Vững - Xu Hướng Mới Của Ngành May Mặc</h5>
+                            <p class="card-text">Trong những năm gần đây, thời trang bền vững đang trở thành một xu
+                                hướng mạnh mẽ trong ngành công nghiệp ...</p>
+                            <a href="#" class="btn btn-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kết Nối Với Chúng Tôi -->
+
+
+    <!-- Chân Trang -->
+    <footer style="background-color: #f8f8f8; padding: 20px 0; font-family: Arial, sans-serif;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between;">
+            <div>
+                <h3 style="color: #333;">Thông tin công ty</h3>
+                <p style="color: #666;">Công ty TNHH XYZ<br>Địa chỉ: Số 123, Đường ABC, TP. HCM<br>SĐT: 0123 456 789</p>
+            </div>
+            <div>
+                <h3 style="color: #333;">Dịch vụ khách hàng</h3>
+                <ul style="list-style: none; padding: 0; color: #666;">
+                    <li><a href="#" style="text-decoration: none; color: #666;">Chính sách đổi trả</a></li>
+                    <li><a href="#" style="text-decoration: none; color: #666;">Giao hàng và thanh toán</a></li>
+                    <li><a href="#" style="text-decoration: none; color: #666;">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#" style="text-decoration: none; color: #666;">Liên hệ hỗ trợ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: #333;">Kết nối với chúng tôi</h3>
+                <ul style="list-style: none; padding: 0; color: #666;">
+                    <li><a href="#" style="text-decoration: none; color: #666;">Facebook</a></li>
+                    <li><a href="#" style="text-decoration: none; color: #666;">Instagram</a></li>
+                    <li><a href="#" style="text-decoration: none; color: #666;">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px; color: #999;">
+            <p>&copy; 2024 Công ty TNHH XYZ. Bảo lưu mọi quyền.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
