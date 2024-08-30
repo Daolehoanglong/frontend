@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './login.css';
-import md5 from 'md5';
 import { useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import { jwtDecode } from 'jwt-decode';
@@ -8,7 +7,6 @@ import { useForm } from 'react-hook-form';
 function Login() {
     const navigate = useNavigate();
     const [showNotification, setShowNotification] = useState(false);
-
     const handleLoginError = () => {
         console.log("Login failed");
     };
@@ -20,8 +18,6 @@ function Login() {
             // console.log(decodedToken.name, decodedToken.email);
             const Name = decodedToken.name
             const Email = decodedToken.email
-            console.log(typeof (Name), Email);
-            console.log(decodedToken);
             try {
                 const response = await fetch('http://localhost:3000/user/addUserGG', {
                     method: 'POST',
@@ -48,7 +44,7 @@ function Login() {
         watch,
         formState: { errors },
     } = useForm()
-    console.log(watch("example"))
+    // console.log(watch("example"))
     const onSubmit = async (data) => {
         try {
             const response = await fetch('http://localhost:3000/user/login', {
@@ -56,13 +52,13 @@ function Login() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(data),
+                body: JSON.stringify(data), 
             });
             if (response.ok) {
                 console.log("thanh cong");
                 console.log(await response.json());
                 
-                navigate('/login')
+                navigate('/')
 
             } else {
                 // Xử lý lỗi

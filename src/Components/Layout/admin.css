@@ -1,0 +1,75 @@
+.dk {
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.description-cell {
+    max-width: 350px;
+    /* Giới hạn chiều rộng của ô */
+}
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.sidebar-content {
+    height: 1200px;
+}
+
+.action-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    display: inline-block;
+    /* Hoặc inline-flex nếu cần */
+    margin: 0 5px;
+    /* Khoảng cách giữa các nút */
+    text-decoration: none;
+    /* Loại bỏ gạch chân */
+}
+
+.action-button.edit {
+    color: #ffc107;
+    /* Màu vàng cho nút sửa */
+}
+
+.action-button.delete {
+    color: #dc3545;
+    /* Màu đỏ cho nút xóa */
+}
+
+/* Nếu cần, thêm hiệu ứng hover */
+.action-button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+    .sidebar-content {
+        display: none;
+    }
+
+    .description-cell {
+        max-width: 50px;
+        /* Giới hạn chiều rộng của cột mô tả */
+        white-space: nowrap;
+        /* Không xuống dòng */
+        overflow: hidden;
+        /* Ẩn phần tràn */
+        text-overflow: ellipsis;
+        /* Hiển thị dấu chấm lửng nếu nội dung vượt quá chiều rộng */
+    }
+
+    .Text_Name {
+        max-width: 60px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 993px) {
+    .dropdown-content {
+        display: none;
+    }
+}

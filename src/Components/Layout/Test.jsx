@@ -1,74 +1,82 @@
 import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 const CheckboxComponent = () => {
-    const [checkedItems, setCheckedItems] = useState([]);
-    const [checkboxState, setCheckboxState] = useState({});
+    const navigate = useNavigate();
+    const [showNotification, setShowNotification] = useState(false);
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+    } = useForm()
+    console.log(watch("example"))
+    const onSubmit = async (data) => {
+        console.log(data);    
+        
+        try {
+            const response = await fetch('http://localhost:3000/products/test', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+            if (response.ok) {
+                console.log("thanh cong");
+                // navigate('/login')
 
-    const handleCheckboxChange = (e) => {
-        const { name, checked } = e.target;
-        // const checked = e.target.checked;
-        if(checked){
-            console.log("success");
-            
-        }else{
-            console.log("error");
-            
+            } else {
+                // Xử lý lỗi
+                console.error('Error adding product:', await response.json());
+                setShowNotification(true);
+                setTimeout(() => {
+                    setShowNotification(false);
+                }, 3000);
+            }
+        } catch (error) {
+            console.error('Error adding product:', error);
         }
-        // Cập nhật trạng thái checkbox
-        setCheckboxState(prevState => ({
-            ...prevState,
-            [name]: checked
-        }));
-
-        if (checked) {
-            // Thêm dữ liệu vào danh sách khi checkbox được chọn
-            setCheckedItems(prevItems => [...prevItems, name]);
-            console.log("tao la if",checkedItems);
-        } else {
-            // Xóa dữ liệu khỏi danh sách khi checkbox bị bỏ chọn
-            setCheckedItems(prevItems => prevItems.filter(item => item !== name));
-            console.log("tao la else",checkedItems);
-        }
-        console.log(checkedItems);
-    };
-
+    }
     return (
-        <div>
-            <label>
-                <input
-                    type="checkbox"
-                    name="item1"
-                    checked={checkboxState["item1"] || false}
-                    onChange={handleCheckboxChange}
-                />
-                Item 1
-            </label>
-            <label>
-                <input
-                    type="checkbox"
-                    name="item2"
-                    checked={checkboxState["item2"] || false}
-                    onChange={handleCheckboxChange}
-                />
-                Item 2
-            </label>
-            <label>
-                <input
-                    type="checkbox"
-                    name="item3"
-                    checked={checkboxState["item3"] || false}
-                    onChange={handleCheckboxChange}
-                />
-                Item 3
-            </label>
-            <div>
-                <h3>Selected Items:</h3>
-                <ul>
-                    {checkedItems.map(item => (
-                        <li key={item}>{item}</li>
-                    ))}
-                </ul>
-            </div>
+        <div className="container mt-4">
+            <h2 className="mb-4">
+                Thêm Sản Phẩm Mới
+            </h2>
+            <form onSubmit={handleSubmit(onSubmit)}
+                action="/submit-product"
+                // encType="multipart/form-data"
+                method="post"
+            >
+                <div className="mb-3">
+                    <label
+                        className="form-label"
+                        htmlFor="imgs"
+                    >
+                        Hình ảnh:
+                    </label>
+                    <input
+                        accept="image/*"
+                        className="form-control"
+                        id="imgs"
+                        // multiple
+                        name="imgs"
+                        required
+                        type="file"
+                        {...register("imgs")}
+                    />
+                    <small className="form-text text-muted">
+                        Chọn nhiều hình ảnh nếu cần.
+                    </small>
+                </div>
+                <button
+                    className="btn btn-primary"
+                    type="submit"
+                >
+                    Gửi
+                </button>
+            </form>
         </div>
     );
 };

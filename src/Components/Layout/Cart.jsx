@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import "./Cart.css"
+import { useNavigate } from 'react-router-dom';
 const Cart = () => {
     const [City, setCity] = useState([])
     const [District, setDistrict] = useState([])
     const [Ward, setWard] = useState([])
+    const navigate = useNavigate();
     useEffect(() => {
         const fetchCity = async () => {
             try {
@@ -237,6 +239,7 @@ const Cart = () => {
                 localStorage.removeItem('CityID')
                 localStorage.removeItem('DistrictID')
                 localStorage.removeItem('WardID')
+                navigate('/')
                 return await response.json();
             } else {
                 // Xử lý lỗi nếu có
